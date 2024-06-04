@@ -1,13 +1,19 @@
-import GalleryImage from "./GalleryImage";
-import { Button } from "@material-tailwind/react";
+import GalleryImage from "./GalleryImage"
+import { Button } from "@material-tailwind/react"
 
-import plastcomImage from "../assets/plastcom.png";
-import creditCardComponentImage from "../assets/interractiveCard.png";
-import colorPalleteGeneratorImage from "../assets/colorPallete.png";
-import retailCardImage from "../assets/retailCardComponent.png";
+import plastcomImage from "../assets/plastcom.png"
+import creditCardComponentImage from "../assets/interractiveCard.png"
+import colorPalleteGeneratorImage from "../assets/colorPallete.png"
+import retailCardImage from "../assets/retailCardComponent.png"
+import todoAppImage from "../assets/todo-app.jpg"
 
 export function QuadGallery() {
 	const data = [
+		{
+			imageLink: todoAppImage,
+			name: "Todo Firebase App",
+			link: "https://np-todos.netlify.app/",
+		},
 		{
 			imageLink: plastcomImage,
 			name: "Plastcom Website",
@@ -28,7 +34,7 @@ export function QuadGallery() {
 			name: "Retail Card component",
 			link: "https://product-preview-card-component-nine-nu.vercel.app/",
 		},
-	];
+	]
 
 	return (
 		<div className=" flex flex-col md:items-center mx-auto gap-5 lg:grid lg:grid-cols-3 lg:gap-7">
@@ -72,5 +78,5 @@ export function QuadGallery() {
 				{/* </a> */}
 			</div>
 		</div>
-	);
+	)
 }
